@@ -11,7 +11,9 @@ let emojis = {
   "😅": "discomfort",
   "🤔": "Think",
   "🙄": "disapprove",
-  "🥺": "plead"
+  "🥺": "plead",
+  "💩": "shit",
+  "😠": "angry"
 };
 
 let description = {
@@ -34,7 +36,9 @@ let description = {
   "🙄":
     "A yellow face with a small, closed mouth, flat or frowning, rolling its large, white eyes upwards. As with the gesture of an eye-roll, commonly conveys moderate disdain, disapproval, frustration, or boredom. Tone varies, including playful, sassy, resentful, and sarcastic, as if saying Yeah, whatever.",
   "🥺":
-    "A yellow face with furrowed eyebrows, a small frown, and large, “puppy dog” eyes, as if begging or pleading. May also represent adoration or feeling touched by a loving gesture"
+    "A yellow face with furrowed eyebrows, a small frown, and large, “puppy dog” eyes, as if begging or pleading. May also represent adoration or feeling touched by a loving gesture",
+  "💩": `May be used to represent feces and other bathroom topics as well as stand in for their many related slang terms. It also enjoys a wide range of idiosyncratic applications, such as conveying a sense of whimsy or silliness, given its fun, happy expression.`,
+  "😠": `A yellow face with a frowning mouth and eyes and eyebrows scrunched downward in anger. Conveys varying degrees of anger, from grumpiness and irritation to disgust and outrage. May also represent someone acting tough or being mean`
 };
 
 let emojiKey = Object.keys(emojis);
@@ -69,9 +73,10 @@ export default function App() {
           color: "white",
           padding: "1rem",
           width: "100%",
-          marginBottom: "2rem".anchor,
+          marginBottom: "2rem",
           position: "fixed",
-          top: "0"
+          top: "0",
+          height: "5rem"
         }}
       >
         Emoji finder
@@ -80,7 +85,7 @@ export default function App() {
         style={{
           padding: "1rem",
           textAlign: "center",
-          marginTop: "4rem",
+          marginTop: "8rem",
           border: "2px solid #F59E0B"
         }}
         onChange={onInputChange}
@@ -112,7 +117,7 @@ export default function App() {
           );
         })}
       </ul>
-      <span style={{ margin: "2rem" }}>{desc}</span>
+      <span style={{ margin: "1rem" }}>{desc}</span>
     </div>
   );
 }
