@@ -1,7 +1,7 @@
 {
-  "name": "emoticoninterpretor",
+  "name": "emojifinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "A react app to find the meaing of emojis",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
