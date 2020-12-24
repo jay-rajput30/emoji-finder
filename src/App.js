@@ -85,8 +85,16 @@ export default function App() {
         }}
         onChange={onInputChange}
       ></input>
-      <h3 style={{ margin: " 2rem" }}>{meaning}</h3>
-      <h3 style={{ marginBottom: "1rem" }}>Emojis we know</h3>
+      <h3
+        style={{
+          margin: " 2rem",
+          textTransform: "uppercase",
+          color: "#e27b11"
+        }}
+      >
+        {meaning}
+      </h3>
+      <h3 style={{ marginBottom: "1rem", color: "#e27b11" }}>Emojis we know</h3>
       <ul style={{ listStyleType: "none", display: "flex", flexWrap: "wrap" }}>
         {emojiKey.map((emo) => {
           return (
