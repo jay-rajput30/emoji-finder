@@ -103,7 +103,15 @@ export default function App() {
         {meaning}
       </h3>
       <h3 style={{ marginBottom: "1rem", color: "#e27b11" }}>Emojis we know</h3>
-      <ul style={{ listStyleType: "none", display: "flex", flexWrap: "wrap" }}>
+      <ul
+        style={{
+          listStyleType: "none",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      >
         {emojiKey.map((emo) => {
           return (
             <li
